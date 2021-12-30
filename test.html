@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .panel-control {
+  position:absolute;
+  opacity:0;
+}
+.tab-group label {
+  display:inline-block;
+  padding: 10px 30px;
+  border:1px solid #ccc;
+  border-bottom:none;
+  background-color: #ccc;
+  bottom:-1px;
+  position:relative;
+}
+.content-group {
+  border:1px solid #ccc;
+  padding: 20px;
+}
+.content{display:none;}
+
+#sell:checked ~ .tab-group [for="sell"],
+#wanted:checked ~ .tab-group [for="wanted"]{background-color: #fff;}
+
+
+#sell:checked ~ .content-group .content1,
+#wanted:checked ~ .content-group .content2
+{display:block}
+    </style>
+</head>
+<body>
+
+        <input type="radio" name="panel-radio" id="sell" checked>
+        <input type="radio" name="panel-radio" id="wanted">
+        <div class="tab-group">
+          <label for="sell">tab1</label>
+          <label for="wanted">tab2</label>
+        </div>
+        <div class="content-group">
+          <div class="content content1">
+            <p>sadasd</p>
+            <p>sadasd</p>
+            <p>sadasd</p>
+            <p>sadasd</p>
+            <p>sadasd</p>
+          </div>
+          <div class="content content2">
+            <p>sad</p>
+            <p>dasd</p>
+            <p>sasd</p>
+            <p>sdasd</p>
+            <p>adasd</p>
+          </div>
+        </div>
+
+</body>
+</html>
