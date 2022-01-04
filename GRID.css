@@ -3,10 +3,11 @@
     padding:0px;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1400px;
+    width: 90%;
     margin: auto;
-    padding-left: -10px;
-    padding-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
 }
 .row{
@@ -16,9 +17,10 @@
     margin-right: -10px;
 }
 [class*=col-]{/* []屬性選取器，class*= 後面有任何字串符合就會被選取*/
+    display: flex;
     padding: 0 10px;
     box-sizing: border-box;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
  .col-1{width: 8.333333%;} /*每個月賺83333元，一年(12個月)就有一百萬了*/
  .col-2{width: 16.666666%;}
