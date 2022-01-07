@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
       <!-- 
@@ -24,24 +25,49 @@
             <input type="checkbox" id="menu_control">
             <div class="wrap">
                 <div class="logo">
-                    <a href="">
+                    <a href="SOLDRY_HOME_RWD.html">
                         <img src="IMG/Logo_SOLDRY+font.png" alt="">
                     </a>
                 </div>
-                <label class="menu_btn" for="menu_control" >
+                <label class="menu_btn" for="menu_control">
                    <span>MENU</span>
                 </label>
                 <nav>
-                    <a href="">BELIEF</a>
-                    <a href="">TYPE</a>
-                    <a href="">ARTICLE</a>
-                    <a href="">PORTFOLIO</a>
-                    <a href="">MAP</a>
+                    <ul>
+                        <li class="searchbar">
+                            <div class="pic">
+                                <img src="IMG/icon_search_white.png" alt="">
+                            </div>
+                            <div class="input">
+                                <input id="mysearch" type="text" placeholder="TYPE">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">BELIEF</a>
+                        </li>
+                        <li>
+                            <a href="">TYPE</a>
+                        </li>
+                        <li>
+                            <a href="">ARTICLE</a>
+                        </li>
+                        <li>
+                            <a href="SOLDRY_PORTFOLIO_RWD.html">PORTFOLIO</a>
+                        </li>
+                       <li>
+                           <a href="">MAP</a>
+                        </li> 
+                    </ul>
                 </nav>
                 <div class="memberlist">
                     <div class="search">
-                        <img src="IMG/icon_search.png" alt="">
-                        <!-- <input placeholder="&nbsp  SEARCH"; type="text"> -->
+                        <div class="icon">
+                            <img src="IMG/icon_search.png" alt="">
+                        </div>
+                        <div class="input">
+                            <input id="mysearch" type="text" placeholder="TYPE">
+                        </div>
+                        <span class="clear" onclick="document.getElementById('mysearch').value='' "></span>
                     </div>
                     <a href=""><img src="IMG/icon_member.png" alt=""></a>
                     <a href=""><img src="IMG/icon_heart.png" alt=""></a>
@@ -53,7 +79,7 @@
             <div  class="item adlens">
                 <img src="IMG/ad_50mm.jpg" alt="">
                 <div class="text">
-                    <h2>SONY F2.8 12-24 mm鏡頭</h2>
+                    <h2>SONY F2.8 12-24 mm</h2>
                     <p>這款 12-24 mm 恆定 F2.8 變焦鏡頭在 12 mm 的焦段可提供超廣角的視角。創新的光學設計搭配 Sony 先進的 XD 線性馬達。</p>
                     <div class="button">
                         <a href="">RELATIVE PRODUCTS</a>
@@ -83,7 +109,10 @@
             </div>
         </div>
         <div class="belief container">
-            <h2>BELIEF</h2>
+            <h2
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out" 
+            data-aos-duration="500">BELIEF</h2>
             <div class="row">
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
@@ -173,9 +202,14 @@
             </div>
         </div>
         <div class="type container">
-            <h2>TYPE</h2>
+            <h2
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out" 
+            data-aos-duration="500">TYPE</h2>
             <div class="row">
-                <div class="col-6 col-md-4 col-xl-2">
+                <div  data-aos="flip-left"
+                data-aos-easing="ease-in"
+                data-aos-duration="500" class="col-6 col-md-4 col-xl-2">
                     <a href="">
                         <div class="item">
                             <div class="pic">
@@ -187,7 +221,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-6 col-md-4 col-xl-2">
+                <div data-aos="flip-left" 
+                data-aos-easing="ease-in"
+                data-aos-delay="300"
+                data-aos-duration="500" class="col-6 col-md-4 col-xl-2">
                     <a href="">
                         <div class="item camera">
                             <div class="pic">
@@ -250,7 +287,10 @@
             </div>
         </div>
         <div class="product container">
-            <h2>THE COOL THINGS YOU NEED</h2>
+            <h2
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out" 
+            data-aos-duration="500">THE COOL THINGS YOU NEED</h2>
             <div class="row">
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card_used">
@@ -529,6 +569,76 @@
                 <a href=""> MORE</a>
             </div>
         </div>
+        <div class="article container">
+            <h2 
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out" 
+            data-aos-duration="500"
+             >ARTICLE</h2>
+            <div class="row">
+                <div class="col-12 col-md-12 col-xl-12">
+                    <article   
+                    class="sunmoonlake">
+                        <div class="pic">
+                            <a href="">
+                                <img src="IMG/article_sunmoonlake.jpg">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h3>日月潭湖底</h3>
+                            <p>連續缺水的臺灣，讓日月潭的湖底難得的與我們相見。乾涸的碼頭，擱淺的漁船，龜裂的土壤，還有溪流痕跡。連續缺水的臺灣，讓日月潭的湖底難得的與我們相見。乾涸的碼頭，擱淺的漁船，龜裂的土壤，還有溪流痕跡。
+                            </p>
+                            <div class="readmore">
+                                <a href="">more</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-12 col-xl-12">
+                    <article class="sixtymt">
+                        <div class="pic">
+                            <a href="">
+                                <img src="IMG/article_sixtymt.jpg">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h3>六十石山金針花海</h3>
+                            <p>恰巧遇上了金針花季，還記得小時候常來的地方， 後來每次都因車潮太多，加上已到訪過無數次便不再前往。這次環島難得遇到花季，平日加上疫情沒什麼遊客，便帶著他來看看我小時候的回憶，又是追陽光趕路程的一天。
+                            </p>
+                            <div class="readmore">
+                                <a href="">more</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="more">
+                    <a href=""> MORE</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="wrap">
+                <div class="bar">
+                    <ul>
+                        <li>
+                            <a href="SOLDRY_HOME_RWD.html">
+                                <img src="IMG/Logo_SOLDRY.png" alt="SOLDRYlogo">
+                            </a>
+                        </li>
+                        <li><a href="">HELP CENTER</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">TERMS OF USE</a></li>
+                        <li><a href="">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>@2021 Powered by SOLDRY Right Reserved</p>
+                    <p>本網站為緯育Tibame前端設計工程師班專題作業，本平台僅供學習、展示之用。</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 
 
@@ -536,12 +646,16 @@
 
 
 
-
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="owl.carousel.min.js"></script>
+
     <script>
+        let icon=document.querySelector(".icon");
+        let search=document.querySelector(".search");
+        icon.onclick=function(){
+            search.classList.toggle("active");
+        }
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
                 loop:true,
@@ -562,6 +676,8 @@
             })
         });
     </script>
-    </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
