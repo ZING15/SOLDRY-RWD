@@ -13,8 +13,6 @@
 .row{
     display: flex;
     flex-wrap:wrap;
-    margin-left: -10px;
-    margin-right: -10px;
 }
 [class*=col-]{/* []屬性選取器，class*= 後面有任何字串符合就會被選取*/
     display: flex;

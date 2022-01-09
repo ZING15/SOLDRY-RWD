@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLDRY MAP</title>
-    <link rel="stylesheet" href="Style-2.css">
+    <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="GRID.css">
+
+
+
+    
     <link rel="Shortcut Icon" type="image/x-icon" href="IMG/Logo_SOLDRY.png1616.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -183,24 +187,19 @@
                     <img class="bgcmap" src="IMG/map_taipei-2.png" alt="">
                     <div class="locationmark">
                         <div class="day mountain">
-                            <label data-aos="fade-down"
-                            data-aos-duration="500"  for="mountain">
+                            <label for="mountain">
                                 <img src="IMG/map_mark_day.png" alt="">
                                 <p>陽明山</p>
                             </label>
                         </div>
                         <div class="night hotel" >
-                            <label data-aos="fade-down"
-                            data-aos-duration="500"  
-                            data-aos-delay="100" for="hotel">
+                            <label for="hotel">
                                 <img src="IMG/map_mark_night.png" alt="">
                                 <p>圓山大飯店</p>
                             </label>
                         </div>
                         <div class="daytonight riverbank" >
-                            <label data-aos="fade-down"
-                            data-aos-duration="500"  
-                            data-aos-delay="150" for="riverbank">
+                            <label for="riverbank">
                                 <img src="IMG/map_mark_daytonight.png" alt="">
                                 <p>大稻埕碼頭</p>
                             </label>
@@ -224,28 +223,19 @@
                             </label>
                         </div>
                         <div class="day dahupark">
-                            <label 
-                            data-aos="fade-down"
-                            data-aos-duration="500"  
-                            data-aos-delay="540" for="dahupark">
+                            <label for="dahupark">
                                 <img src="IMG/map_mark_day.png" alt="">
                                 <p>大湖公園</p>
                             </label>
                         </div>
                         <div class="night jiantanmountain">
-                            <label 
-                            data-aos="fade-down"
-                            data-aos-duration="500"  
-                            data-aos-delay="540" for="jiantanmountain">
+                            <label for="jiantanmountain">
                                 <p>劍潭山</p>
                                 <img src="IMG/map_mark_night.png" alt="">
                             </label>
                         </div>
                         <div class="day airport">
-                            <label 
-                            data-aos="fade-down"
-                            data-aos-duration="500"  
-                            data-aos-delay="150" for="airport">
+                            <label for="airport">
                                 <img src="IMG/map_mark_day.png" alt="">
                                 <p>松山機場</p>
                             </label>
@@ -289,43 +279,9 @@
 
 
 
-
-
-
-
-
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
     <script>
-        let icon=document.querySelector(".icon");
-        let search=document.querySelector(".search");
-        icon.onclick=function(){
-            search.classList.toggle("active");
-        }
-
-        $(document).ready(function(){
-            $('.ad.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                dotsEach:true,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    768:{
-                        items:1
-                    },
-                    1400:{
-                        items:1
-                    }
-                }
-            })
-        });
-
         AOS.init();
     </script>
 </body>
