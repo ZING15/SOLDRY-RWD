@@ -13,21 +13,21 @@
 }
 .portfolio .backimg_bwroad{
     height: 20vh;
-    background: url("../../IMG/portfolio_bgcimg_bwroad.jpg");
+    background: url("IMG/portfolio_bgcimg_bwroad.jpg");
     background-size:contain;
     background-position: top center;
     background-attachment: fixed;
 }
 .portfolio .backimg_sakura{
     height: 20vh;
-    background: url("../../IMG/portfolio_bgcimg_cat.jpg");
+    background: url("IMG/portfolio_bgcimg_cat.jpg");
     background-size: contain;
     background-position: 80% center;
     background-attachment: fixed;   
 }
 .portfolio .backimg_star{
     height: 20vh;
-    background: url("../../IMG/portfolio_bgcimg_star.jpg");
+    background: url("IMG/portfolio_bgcimg_star.jpg");
     background-size:contain;
     background-position: bottom center;
     background-attachment: fixed;
