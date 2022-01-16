@@ -23,6 +23,10 @@
     align-items: center;
     background-color: #ccc;
     justify-content: space-between;
+    cursor: pointer;
+}
+.list .item:hover{
+    transform: scale(1.01);
 }
 .list .item .pic{
     width: 80%;
