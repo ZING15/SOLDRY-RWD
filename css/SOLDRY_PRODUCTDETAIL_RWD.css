@@ -1,6 +1,11 @@
 .detailpage{
     width: 100%;
     background:linear-gradient(to bottom,#111,#555,#333,#555,#333,#444);
+    background: url(../IMG/dark-grunge-texture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 .productdetail{
     width: 100%;
@@ -47,7 +52,6 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #8883;
 }
 .productdetail .wrap .photo{
     width: 100%;
@@ -84,7 +88,6 @@
     padding: 1em 0 1em;
     letter-spacing: 1px;
     color: #fff;
-    border-top: 1px solid #8883;
 }
 .discribe .item{
     display: flex;
@@ -132,7 +135,6 @@
     color: #ddd;
     text-align: center;
     padding: 3em 0;
-    border-top:1px solid #8883
 }
 .recomand .owl-carousel .owl-item img {
     height: 100px;
@@ -179,6 +181,9 @@
         border-top: 0px;
         font-size: 36px;
     }
+    .discribe p:last-child{
+        font-size:18px;
+    }
     .discribe .item{
         justify-content: start;
     }
@@ -189,7 +194,7 @@
         width: auto;
     }
     .recomand>h2{
-        font-size: 30px;
+        font-size: 34px;
     }
     .card_rel h3{
         color: #bbb;

@@ -1,6 +1,11 @@
 .beliefpage{
     width: 100%;
     background:linear-gradient(to bottom,#111,#555,#333,#555,#333,#444);
+    background: url(../IMG/dark-grunge-texture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 .product{
     max-width: 1400px;
@@ -68,8 +73,8 @@ form label span{
 }
 .row{
     justify-content: center;
-    background:linear-gradient(to bottom,rgba(51, 51, 51, 0.281),rgba(51, 51, 51, 0));
-    padding: 50px 5px 80px;
+    /* background:linear-gradient(to bottom,rgba(71, 71, 71, 0.651),rgba(51, 51, 51, 0.335)); */
+    padding: 50px 5px 0px;
     box-sizing: border-box;
     border-top-left-radius: 100px;
 }

@@ -121,8 +121,13 @@ $('.recomand .owl-carousel').owlCarousel({
 /*show card*/
 $(document).ready(function(){
     $('.landmarkIcon').click(function(){
+        $('.landmarkIcon').not(this).css('transform','scale(1)');
+        $(this).css({
+            transform:'scale(1.1)',
+            transition:'.2s'
+        });
         let name= $(this).attr('id');
-        $(`.${name}.cardContent`).stop(true).slideToggle(500,'linear');
+        $(`.${name}.cardContent`).stop(true).slideToggle(200,'linear');
     });
 });
 

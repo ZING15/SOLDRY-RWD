@@ -1,6 +1,11 @@
 .mappage{
     width: 100%;
     background: linear-gradient(to bottom right,#222,#666);
+    background: url(../IMG/dark-grunge-texture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 .map{
     display: block;
