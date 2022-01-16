@@ -1,0 +1,130 @@
+.portfoliopage{
+    width: 100%;
+    background: linear-gradient(to bottom right,#222,#666);
+}
+.portfolio{
+    max-width: 1400px;
+    margin: auto;
+}
+.portfolio .wrap{
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+}
+.portfolio .backimg_bwroad{
+    height: 20vh;
+    background: url("../../IMG/portfolio_bgcimg_bwroad.jpg");
+    background-size:contain;
+    background-position: top center;
+    background-attachment: fixed;
+}
+.portfolio .backimg_sakura{
+    height: 20vh;
+    background: url("../../IMG/portfolio_bgcimg_cat.jpg");
+    background-size: contain;
+    background-position: 80% center;
+    background-attachment: fixed;   
+}
+.portfolio .backimg_star{
+    height: 20vh;
+    background: url("../../IMG/portfolio_bgcimg_star.jpg");
+    background-size:contain;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+[class*=backimg_]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+[class*=backimg_] h2{
+    font-size: 50px;
+    color: transparent;
+    color: rgba(255, 255, 255, 0.801);
+}
+.portfolio .waterfall{
+    column-count: 2;
+    column-gap: 5px;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    background-color: #ddd2;
+}
+.portfolio .waterfall .pic{
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .waterfall .pic img{
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: #0008;
+    padding: 1em;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.waterfall .pic:hover .overlay {
+    left:0
+} 
+.overlay h2{
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 1em;
+}
+.overlay p{
+    color: #ddd;
+    font-size: 12px;
+}
+@media screen and (min-width:768px) {
+    .portfolio .waterfall{
+        column-count: 4;
+    }
+    .overlay h2{
+        font-size: 20px;
+    }
+    .overlay p{
+        font-size: 14px;
+    }
+    .portfolio .backimg_bwroad{
+        height: 40vh;
+        background-size:cover;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+    .portfolio .backimg_sakura{
+        height: 40vh;
+        background-size: cover;
+        background-position: top center;
+        background-attachment: fixed;   
+    }
+    .portfolio .backimg_star{
+        height: 40vh;
+        background-size:cover;
+        background-position: bottom center;
+        background-attachment: fixed;
+    }
+}
+@media screen and (min-width:1200px) {
+    .portfolio .waterfall{
+        column-count: 5;
+    }
+    .portfolio .backimg_bwroad{
+        height: 60vh;
+    }
+    .portfolio .backimg_sakura{
+        height: 60vh;
+    }
+    .portfolio .backimg_star{
+        height: 60vh;
+
+    }
+}

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLDRY</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="SOLDRY_HOME_RWD.css">
-    <link rel="stylesheet" href="GRID.css">
-    <link rel="Shortcut Icon" type="image/x-icon" href="IMG/Logo_SOLDRY.png1616.ico">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/SOLDRY_HOME_RWD.css">
+    <link rel="stylesheet" href="css/GRID.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="../IMG/Logo_SOLDRY.png1616.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -29,10 +29,7 @@
                     <a href="SOLDRY_HOME_RWD.html">
                         <img src="IMG/Logo_SOLDRY+font.png" alt="">
                     </a>
-                </div>
-                <label class="menu_btn" for="menu_control">
-                   <span>MENU</span>
-                </label>
+                </div> 
                 <nav>
                     <ul>
                         <li class="searchbar">
@@ -47,38 +44,40 @@
                             <a href="SOLDRY_BELIEF_RWD.html">BELIEF</a>
                         </li>
                         <li>
-                            <a href="">TYPE</a>
+                            <a href="SOLDRY_BELIEF_RWD.html">TYPE</a>
                         </li>
                         <li>
-                            <a href="">ARTICLE</a>
+                            <a href="SOLDRY_ATICLE_RWD.html">ARTICLE</a>
                         </li>
                         <li>
                             <a href="SOLDRY_PORTFOLIO_RWD.html">PORTFOLIO</a>
                         </li>
                        <li>
-                           <a href="">MAP</a>
+                           <a href="SOLDRY_MAP_RWD.html">MAP</a>
                         </li> 
                     </ul>
                 </nav>
+                <label class="menu_btn" for="menu_control">
+                </label>
                 <div class="memberlist">
                     <div class="search">
                         <div class="icon">
                             <img src="IMG/icon_search.png" alt="">
                         </div>
                         <div class="input">
-                            <input id="mysearch" type="text" placeholder="TYPE">
+                            <input id="mysearchRwd" type="text" placeholder="TYPE">
                         </div>
-                        <span class="clear"  onclick="document.getElementById('mysearch').value = '' "></span>
+                        <span class="clear" id="clear"></span>
                     </div>
                     <a href=""><img src="IMG/icon_member.png" alt=""></a>
                     <a href=""><img src="IMG/icon_heart.png" alt=""></a>
-                    <a href=""><img src="IMG/icon_chat.png" alt=""></a>
+                    <a href="SOLDRY_CHATBOX _RWD.html"><img src="IMG/icon_chat.png" alt=""></a>
                 </div>
             </div>
         </header>
         <div class="ad owl-carousel owl-theme">
             <div  class="item adlens">
-                <img src="IMG/ad_50mm.jpg" alt="">
+                <img src="../IMG/ad_50mm.jpg" alt="">
                 <div class="text">
                     <h2>SONY F2.8 12-24 mm</h2>
                     <p>這款 12-24 mm 恆定 F2.8 變焦鏡頭在 12 mm 的焦段可提供超廣角的視角。創新的光學設計搭配 Sony 先進的 XD 線性馬達。</p>
@@ -88,7 +87,7 @@
                 </div>
             </div>
             <div  class="item adlens">
-                <img src="IMG/ad_a73.jpg" alt="">
+                <img src="../IMG/ad_a73.jpg" alt="">
                 <div class="text">
                     <h2>SONY α7 III</h2>
                     <p>α7 III 的輕巧機身，蘊含出色的成像能力和高速性能，提供強大功能、精準度和靈活度，讓您隨心所欲拍攝畢生僅一次的珍貴時刻。</p>
@@ -98,7 +97,7 @@
                 </div>
             </div>
             <div  class="item adlens">
-                <img src="IMG/ad_fx3.jpg" alt="">
+                <img src="../IMG/ad_fx3.jpg" alt="">
                 <div class="text">
                     <h2>SONY FX3</h2>
                     <p>
@@ -118,84 +117,84 @@
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="SOLDRY_BELIEF_RWD.html">
-                            <img class="logo_sony" src="IMG/Logo_sony.png" alt="">
+                            <img class="logo_sony" src="../IMG/Logo_sony.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_nikon" src="IMG/Logo_nikon.png" alt="">
+                            <img class="logo_nikon" src="../IMG/Logo_nikon.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_canon" src="IMG/Logo_canon.png" alt="">
+                            <img class="logo_canon" src="../IMG/Logo_canon.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_fujifilm" src="IMG/Logo_fujifilm.png" alt="">
+                            <img class="logo_fujifilm" src="../IMG/Logo_fujifilm.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_olympus" src="IMG/Logo_olympus.png" alt="">
+                            <img class="logo_olympus" src="../IMG/Logo_olympus.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_sigma" src="IMG/Logo_sigma.png" alt="">
+                            <img class="logo_sigma" src="../IMG/Logo_sigma.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_lumix" src="IMG/Logo_lumix.png" alt="">
+                            <img class="logo_lumix" src="../IMG/Logo_lumix.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_gopro" src="IMG/Logo_gopro.png" alt="">
+                            <img class="logo_gopro" src="../IMG/Logo_gopro.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_hasselblad" src="IMG/Logo_hasselblad.png" alt="">
+                            <img class="logo_hasselblad" src="../IMG/Logo_hasselblad.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_tamron" src="IMG/Logo_tamron.png" alt="">
+                            <img class="logo_tamron" src="../IMG/Logo_tamron.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_dji" src="IMG/Logo_dji.png" alt="">
+                            <img class="logo_dji" src="../IMG/Logo_dji.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3">
                     <div class="item">
                         <a href="">
-                            <img class="logo_leica" src="IMG/Logo_leica.png" alt="">
+                            <img class="logo_leica" src="../IMG/Logo_leica.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -204,8 +203,7 @@
         </div>
         <div class="type container">
             <h2
-            data-aos="fade-down" 
-            data-aos-anchor-placement="bottom-bottom"  data-aos-easing="ease-in-out">TYPE</h2>
+            data-aos="fade-down" data-aos-easing="ease-in-out">TYPE</h2>
             <div class="row">
                 <div  data-aos="flip-up"
                 data-aos-easing="ease-in"
@@ -213,7 +211,7 @@
                     <a href="">
                         <div class="item">
                             <div class="pic">
-                                <img src="IMG/Product_lens_FE 12-24mm F2.8 GM.png">
+                                <img src="../IMG/Product_lens_FE 12-24mm F2.8 GM.png">
                             </div>
                             <div class="txt">
                                 <h3>LENS</h3>
@@ -227,7 +225,7 @@
                     <a href="">
                         <div class="item camera">
                             <div class="pic">
-                                <img src="IMG/Product_digitlecamera_Alpha 7 IV.png">
+                                <img src="../IMG/Product_digitlecamera_Alpha 7 IV.png">
                             </div>
                             <div class="txt">
                                 <h3>CAMERA</h3>
@@ -241,7 +239,7 @@
                     <a href="">
                         <div class="item ">
                             <div class="pic">
-                                <img src="IMG/Product_tripods_VCTR100.png">
+                                <img src="../IMG/Product_tripods_VCTR100.png">
                             </div>
                             <div class="txt">
                                 <h3>TRIPODS</h3>
@@ -255,7 +253,7 @@
                     <a href="">
                         <div class="item">
                             <div class="pic">
-                                <img src="IMG/Product_flashlight_GN46.png">
+                                <img src="../IMG/Product_flashlight_GN46.png">
                             </div>
                             <div class="txt">
                                 <h3>FLASHLIGHT</h3>
@@ -269,7 +267,7 @@
                     <a href="">
                         <div class="item actioncamera">
                             <div class="pic">
-                                <img src="IMG/Product_sportcamera_goproMAX.png">
+                                <img src="../IMG/Product_sportcamera_goproMAX.png">
                             </div>
                             <div class="txt">
                                 <h3>ACTION<br>CAMERA</h3>
@@ -283,7 +281,7 @@
                     <a href="">
                         <div class="item drone">
                             <div class="pic">
-                                <img src="IMG/Product_drone_dji.png">
+                                <img src="../IMG/Product_drone_dji.png">
                             </div>
                             <div class="txt">
                                 <h3>DRONE</h3>
@@ -302,7 +300,7 @@
                     <div class="card_used">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_digitlecamera_Alpha 7 IV.png">
+                                <img src="../IMG/Product_digitlecamera_Alpha 7 IV.png" >
                             </a>
                         </div>
                         <div class="txt">
@@ -315,7 +313,7 @@
                             <div class="wanted">
                                 <p>NT$69,999</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart"  src="../IMG/icon_heart_whiteline.png" alt="" >
                                 </div>
                             </div>
                         </div>
@@ -325,7 +323,7 @@
                     <div class="card_new">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_sportcamera_goproMAX.png">
+                                <img src="../IMG/Product_sportcamera_goproMAX.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -338,7 +336,7 @@
                             <div class="wanted">
                                 <p>NT$8,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -348,7 +346,7 @@
                     <div class="card_used">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_flashlight_GN46.png">
+                                <img src="../IMG/Product_flashlight_GN46.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -360,7 +358,7 @@
                             <div class="wanted">
                                 <p>NT$16,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -370,7 +368,7 @@
                     <div class="card_new">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_tripods_VCT-P300.png">
+                                <img src="../IMG/Product_tripods_VCT-P300.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -382,7 +380,7 @@
                             <div class="wanted">
                                 <p>NT$20,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -392,7 +390,7 @@
                     <div class="card_used">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_lens_FE 14mm F1.8 GM.png">
+                                <img src="../IMG/Product_lens_FE 14mm F1.8 GM.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -405,7 +403,7 @@
                             <div class="wanted">
                                 <p>NT$49,999</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -415,7 +413,7 @@
                     <div class="card_new">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_sportcamera_gopro10.png">
+                                <img src="../IMG/Product_sportcamera_gopro10.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -428,7 +426,7 @@
                             <div class="wanted">
                                 <p>NT$6,600</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -438,7 +436,7 @@
                     <div class="card_used">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_tripods_VCTVPR1.png">
+                                <img src="../IMG/Product_tripods_VCTVPR1.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -450,7 +448,7 @@
                             <div class="wanted">
                                 <p>NT$20,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -460,7 +458,7 @@
                     <div class="card_new">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_drone_dji.png">
+                                <img src="../IMG/Product_drone_dji.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -473,7 +471,7 @@
                             <div class="wanted">
                                 <p>NT$30,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -483,7 +481,7 @@
                     <div class="card_new">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_lens_FE 50mm F1.2 GM.png">
+                                <img src="../IMG/Product_lens_FE 50mm F1.2 GM.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -496,7 +494,7 @@
                             <div class="wanted">
                                 <p>NT$30,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -506,7 +504,7 @@
                     <div class="card_used">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_digitlecamera_Alpha 7 IV.png">
+                                <img src="../IMG/Product_digitlecamera_Alpha 7 IV.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -519,7 +517,7 @@
                             <div class="wanted">
                                 <p>NT$69,999</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -529,7 +527,7 @@
                     <div class="card_new">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_sportcamera_goproMAX.png">
+                                <img src="../IMG/Product_sportcamera_goproMAX.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -542,7 +540,7 @@
                             <div class="wanted">
                                 <p>NT$8,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -552,7 +550,7 @@
                     <div class="card_used">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/Product_flashlight_GN46.png">
+                                <img src="../IMG/Product_flashlight_GN46.png">
                             </a>
                         </div>
                         <div class="txt">
@@ -564,7 +562,7 @@
                             <div class="wanted">
                                 <p>NT$16,000</p>
                                 <div class="wantedpic">
-                                    <img src="IMG/icon_heart_whiteline.png" alt="">
+                                    <img class="heart" src="../IMG/icon_heart_whiteline.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -587,7 +585,7 @@
                     class="sunmoonlake">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/article_sunmoonlake.jpg">
+                                <img src="../IMG/article_sunmoonlake.jpg">
                             </a>
                         </div>
                         <div class="text">
@@ -604,7 +602,7 @@
                     <article class="sixtymt">
                         <div class="pic">
                             <a href="">
-                                <img src="IMG/article_sixtymt.jpg">
+                                <img src="../IMG/article_sixtymt.jpg">
                             </a>
                         </div>
                         <div class="text">
@@ -628,7 +626,7 @@
                     <ul>
                         <li>
                             <a href="SOLDRY_HOME_RWD.html">
-                                <img src="IMG/Logo_SOLDRY.png" alt="SOLDRYlogo">
+                                <img src="../IMG/Logo_SOLDRY.png" alt="SOLDRYlogo">
                             </a>
                         </li>
                         <li><a href="">HELP CENTER</a></li>
@@ -647,35 +645,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
-    <script>
-        let icon=document.querySelector(".icon");
-        let search=document.querySelector(".search");
-        icon.onclick=function(){
-            search.classList.toggle("active");
-        }
-
-        $(document).ready(function(){
-            $('.ad.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                dotsEach:true,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    768:{
-                        items:1
-                    },
-                    1400:{
-                        items:1
-                    }
-                }
-            })
-        });
-
-        AOS.init();
-    </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/SOLDRY.js"></script>
 </body>
 </html>

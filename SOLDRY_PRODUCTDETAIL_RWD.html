@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SOLDRY_PRODUCTDETAIL</title>
-        <link rel="stylesheet" href="Style.css">
-        <link rel="stylesheet" href="SOLDRY_PRODUCTDETAIL_RWD.css">
-        <link rel="stylesheet" href="GRID.css">
+        <title>SOLDRY PRODUCTDETAIL</title>
+        <link rel="stylesheet" href="css/Style.css">
+        <link rel="stylesheet" href="css/SOLDRY_PRODUCTDETAIL_RWD.css">
+        <link rel="stylesheet" href="css/GRID.css">
         <link rel="Shortcut Icon" type="image/x-icon" href="IMG/Logo_SOLDRY.png1616.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,16 +47,16 @@
                             <a href="SOLDRY_BELIEF_RWD.html">BELIEF</a>
                         </li>
                         <li>
-                            <a href="">TYPE</a>
+                            <a href="SOLDRY_BELIEF_RWD.html">TYPE</a>
                         </li>
                         <li>
-                            <a href="">ARTICLE</a>
+                            <a href="SOLDRY_ATICLE_RWD.html">ARTICLE</a>
                         </li>
                         <li>
                             <a href="SOLDRY_PORTFOLIO_RWD.html">PORTFOLIO</a>
                         </li>
                        <li>
-                           <a href="">MAP</a>
+                           <a href="SOLDRY_MAP_RWD.html">MAP</a>
                         </li> 
                     </ul>
                 </nav>
@@ -66,13 +66,13 @@
                             <img src="IMG/icon_search.png" alt="">
                         </div>
                         <div class="input">
-                            <input id="mysearch" type="text" placeholder="TYPE">
+                            <input id="mysearchRwd" type="text" placeholder="TYPE">
                         </div>
-                        <span class="clear" onClick="document.getElementById('mysearch').value = '' "></span>
+                        <span class="clear" id="clear"></span>
                     </div>
                     <a href=""><img src="IMG/icon_member.png" alt=""></a>
                     <a href=""><img src="IMG/icon_heart.png" alt=""></a>
-                    <a href=""><img src="IMG/icon_chat.png" alt=""></a>
+                    <a href="SOLDRY_CHATBOX _RWD.html"><img src="IMG/icon_chat.png" alt=""></a>
                 </div>
             </div>
         </header>
@@ -116,7 +116,7 @@
                     <h2>SONY A7R3</h2>
                     <p>NT$69,999</p>
                     <div class="item">
-                        <a href="">
+                        <a href="SOLDRY_CHATBOX _RWD.html">
                             <img src="IMG/icon_chat.png">
                             <span>CHAT</span> 
                         </a>
@@ -221,68 +221,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
-    <script>
-        let icon=document.querySelector(".icon");
-        let search=document.querySelector(".search");
-        icon.onclick=function(){
-            search.classList.toggle("active");
-        }
-    </script>
-    <script>
-        function showLarge(e){
-                document.getElementById("large").src=e.target.src;
-            }
-        function init(){
-                let smalls=	document.querySelectorAll(".productdetail .small img ");
-                for(let i=0;i<smalls.length;i++){
-                    smalls[i].onclick=showLarge
-                    }
-                }
-            
-        window.addEventListener("load", init, false);
-    
-        $(document).ready(function(){
-            $('.small.owl-carousel').owlCarousel({
-                loop:true,
-                margin:5,
-                dotsEach:true,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:3
-                    },
-                    768:{
-                        items:5
-                    },
-                    1400:{
-                        items:4
-                    }
-                }
-            })
-        });
-        $(document).ready(function(){
-            $('.recomand .owl-carousel').owlCarousel({
-                loop:true,
-                margin:5,
-                dots:true,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:2
-                    },
-                    768:{
-                        items:4
-                    },
-                    1400:{
-                        items:5
-                    }
-                }
-            })
-        });
-    </script>
-    <script>
-        AOS.init();
-    </script>  
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/SOLDRY.js"></script>
 </body>
 </html>

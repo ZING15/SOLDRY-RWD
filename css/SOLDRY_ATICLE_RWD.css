@@ -1,0 +1,412 @@
+.articlepage{
+    width: 100%;
+    background:linear-gradient(to bottom,#111,#555,#333,#555,#333,#444);
+    overflow: hidden;
+}
+.article{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+}
+.breadpath{
+    position: absolute;
+    top: -0.4%;
+    z-index: 10000;
+}
+.breadpath ol{
+    display: flex;
+}
+.breadpath ol li{
+    color: #fff;
+    list-style: none;
+    flex-shrink: 0;
+}
+.breadpath ol li a{
+    text-decoration: none;
+    color: #ddd6;
+    font-size: 10px;
+    vertical-align: middle;
+}
+.breadpath ol li a:hover{
+    color: #E07048;
+}
+.filter{
+    margin-top: 5%;
+}
+.filter h2{
+    color: #fff;
+    font-size: 20px;
+    padding: 5%;
+    cursor: pointer;
+    position: relative;
+    /* background-color: #fff; */
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.filter h2:hover{
+    background-color: #aaa3;
+}
+.filter h2:after{
+    content: '';
+    border-top: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.articlelist{
+    padding:5%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    display: none;
+    background:linear-gradient(to bottom,#0000,#4443)
+}
+.articlelist ul{
+    margin-bottom: 10%;
+}
+.articlelist ul li{
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom:1px solid #8883 ;
+}
+.articlelist ul li a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 2;
+    position: relative;
+}
+.articlelist ul li:hover a{
+    color: #E07048;
+    font-weight: bold;
+}
+.articlelist ul li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #E07048;
+    position: absolute;
+    left: 0%;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.articlelist ul li:hover a::after{
+    width: 100%;
+}
+.articlelist ul li p{
+    color: #aaa8;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.articlelist ul li:hover p{
+    color: #E07048;
+}
+.articlelist .more{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8888;
+    padding: 0.5em 1em ;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.articlelist .more:hover{
+    color: #fff;
+    background-color: #E07048;
+    transform: scale(1.1); 
+}
+.sunmoon .headpic{
+    width: 100%;
+    position: relative;
+}
+.sunmoon .headpic img{
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+}
+.sunmoon .headpic .title{
+    width: 90%;
+    padding: 5%;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #fff8;
+    border-radius: 20px;
+    position:absolute;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    bottom: -15%
+}
+.sunmoon .headpic .title h2{
+    text-align: center;
+    font-size: 34px;
+    line-height: 1.5;
+    color: #222;
+    padding-bottom: 0.5em;
+}
+.sunmoon .author{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sunmoon .author .name{
+    display: flex;
+    align-items: center;
+}
+.sunmoon .author .pic{
+    width: 20px;
+    margin-right: 5%;
+}
+.sunmoon .author .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.sunmoon .author a{
+    text-decoration: none;
+    font-size: 10px;
+    color: #111;
+    transition: 0.2s;
+}
+.sunmoon .author a:hover{
+    color: #E07048;
+    transform: scale(1.1);
+}
+.sunmoon .author p{
+    text-decoration: none;
+    font-size: 10px;
+    color: #1115;
+}
+article{
+    margin-top: 10%;
+    background:linear-gradient(to bottom,#ccc6,#bbb2);
+    padding: 5% 0;
+    border-radius:8px ;
+}
+.rowitem,.item{
+    width: 90%;
+    margin: auto;
+    margin-bottom:50px ;
+    z-index: 1000;
+}
+.rowitem .pic{
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative;
+}
+.rowitem:first-child .pic:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 8px solid #df8d6f9d;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.rowitem:nth-child(5) .pic:after{
+    content: '';
+    width: 60%;
+    height: 80%;
+    border: 8px solid #df8d6f9d;
+    position: absolute;
+    top: 30%;
+    left: -15%;
+}
+.rowitem:nth-child(6) .pic:after{
+    content: '';
+    width: 100%;
+    height: 80%;
+    border: 8px solid #df8d6f9d;
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}
+.rowitem .pic img{
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1000;
+}
+.rowitem .pic h3{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 1000;
+    letter-spacing: 2px;
+}
+.rowitem p{
+    font-size: 16px;
+    color: #ddd;
+    letter-spacing: 2px;
+    line-height: 2;
+    position: relative;
+    z-index: 1000;
+}
+.item .pic,.item .txt{
+    width: 100%;
+}
+.item .pic img{
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.item .txt h3{
+    font-size: 18px;
+    color: #fff;
+    margin: 0.5em 0;
+    letter-spacing: 2px;
+}
+.item .txt h3::first-letter{
+    font-size: 22px;
+    color: #E07048;
+ }
+.item .txt p{
+    font-size: 16px;
+    color: #ddd;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+article ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+article ul li{
+    width: 20px;
+    list-style: none;
+    margin: 0 2%;
+}
+article ul li img{
+    width: 100%;
+    transition: 0.3s;
+}
+article ul li img:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (min-width:768px) {
+    .item{
+        display: flex;
+        align-items: center;
+    }
+    article .item:nth-of-type(even){
+        flex-direction: row-reverse;
+    }
+    .item .pic,.item .txt{
+        width: 50%;
+    }
+    .item .txt{
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    .item .pic img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .rowitem:nth-child(6) .pic:after{
+        width: 80%;
+        height: 100%;
+        top: 40%;
+        left: 50%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .article{
+        display: flex;
+    }
+    .breadpath{
+        top: 0.5%;
+        left: 15%;
+    }
+    .breadpath ol li a{
+        color: #1115;
+        font-size: 14px;
+    }
+    .filter{
+        width: 14%;
+    }
+    .articlelist ul li{
+        display:block;
+        flex-wrap: wrap;
+    }
+    .articlelist ul li a{
+        color: #ddd;
+    }
+    .articlelist ul li a::after{
+        bottom: -5px;
+    }
+    .sunmoon{
+        width: 85%;
+    }
+    .sunmoon .headpic .title h2{
+        font-size: 60px;
+    }
+    .sunmoon .author{
+        justify-content: center;
+    }
+    .sunmoon .author .pic{
+        width: 40px;
+    }
+    .sunmoon .author .name{
+        margin-right: 10px;
+    }
+    .sunmoon .author a{
+        font-size: 14px;
+        color: #333;
+        margin-right: 20px;
+    }
+    .sunmoon .author p{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .rowitem:first-child .pic:after{
+        width: 100%;
+        height: 80%;
+        border: 15px solid #df8d6f9d;
+        top: 30%;
+        left: 20%;
+    }
+    .rowitem:nth-child(5) .pic:after{
+        border: 20px solid #df8d6f9d;
+    }
+    .rowitem:nth-child(6) .pic:after{
+        width: 100%;
+        height: 80%;
+        border: 10px solid #df8d6f9d;
+        top: 40%;
+        left: 20%;
+    }
+    .rowitem .pic h3{
+        font-size: 16px;
+    }
+    .rowitem p{
+        font-size: 18px;
+        letter-spacing: 4px;
+        line-height:2.5;
+    }
+    .item .txt h3{
+        font-size: 20px;
+    }
+    .item .txt h3::first-letter{
+        font-size: 24px;
+     }
+    .item .txt p{
+        font-size: 18px;
+        letter-spacing: 4px;
+        line-height:2.5;
+    }
+}
+
+
+
+
+
+
+
+

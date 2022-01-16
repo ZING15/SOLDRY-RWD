@@ -1,0 +1,316 @@
+.chatpage{
+    width: 100%;
+    background:linear-gradient(to bottom,#111,#333,#444);
+}
+.row{
+    margin-top: 3%;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y:scroll ;
+    background-color: #bbb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.list .item{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #ccc;
+    justify-content: space-between;
+}
+.list .item .pic{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+.list .item .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.list .item .txt,.list .item .date{
+    display: none;
+}
+.tab{
+    margin-top: 10px;
+    justify-content: center;
+}
+.tab label{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.content{
+    display:none;
+} 
+.listchoose{
+    display: none;
+}
+#wanted:checked ~ .tab [for="wanted"]{
+    background-color: #E07048;
+} 
+#sell:checked ~ .tab [for="sell"]{
+    background-color: #216D94 ;
+}
+#wanted:checked ~ .wantedbox,
+#sell:checked ~ .sellbox{
+    display:block
+}
+.wantedbox .item:nth-of-type(odd){
+    background-color: #E07048 ;
+}
+.sellbox .item:nth-of-type(odd){
+    background-color: #216D94  ;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 15vh; */
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #aaa;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.thumbnail .pic{
+    width: 100px;
+}
+.thumbnail .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.titleprice h2{
+    font-size: 12px;
+}
+.titleprice p{
+    font-size: 16px;
+    color: #E07048;
+    font-weight: bold;
+}
+.dealprice{
+    display: block;
+    margin: auto;
+    border-top: 1px solid #8888;
+}
+.dealprice .txt{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.dealprice p{
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    color: #333;
+}
+.dealprice form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.dealprice input{
+    width: 50%;
+    border-radius: 5px;
+    line-height: 18px;
+    height: 18px;
+}
+.dealprice button{
+    font-size: 10px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #888;
+    color:#ddd;
+    border: none;
+}
+.dealprice button:hover{
+    background-color: #E07048;
+}
+.dialogue{
+    background-color: #888;
+    height: 60vh;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.user{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.local{
+    flex-direction: row-reverse;
+}
+.user .avatar{
+    display: block;
+}
+.user .pic{
+    display: flex;
+    width: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+.user .pic img{
+    width: 100%;
+}
+.user .name{
+    color: #555;
+    font-size: 10px;
+}
+.user .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.remote .txt{
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.local .txt {
+    margin-right: 10px;
+    margin-left: 40px;
+}
+.remote .txt p, .local .txt p{
+    font-size: 12px;
+    color: #333;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    border-radius: 8px;
+    padding:5px 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+.remote .txt p{
+    background-color:#bbb ;
+}
+.local .txt p{
+    background-color: #ff8153;
+}
+.send{
+    width: 100%;
+    height: 5vh;
+}
+textarea{
+    width: 100%;
+    padding:3px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #ddd;
+    border: 1px solid #8888;
+}
+@media screen and (min-width:768px) {
+    .list .item .txt,.list .item .date{
+        display: block;
+    }
+    .list .item .pic{
+        width: 20%;
+        display: flex;
+        margin: auto;
+    }
+    .list .item .pic img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .list .item .txt{
+        flex-grow: 1;
+    }
+    .list .item .txt h2{
+        font-size: 16px;
+        margin-bottom: 0.5em;
+        flex-shrink: 1;
+        color: #333;
+    }
+    .list .item .txt p{
+        font-size: 14px;
+        color: #444;
+    }
+    .list .item .date p{
+        font-size: 10px;
+        color: #8888;
+    }
+    .tab{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .tab label{
+        font-size: 16px;
+        padding: 5px 10px;
+        color: #111;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .thumbnail{
+        display: flex;
+        justify-content: center;
+    }
+    .thumbnail .pic{
+        width: 120px;
+    }
+    .titleprice h2{
+        font-size: 16px;
+    }
+    .titleprice p{
+        font-size: 20px;
+        color: #E07048;
+        font-weight: bold;
+    }
+    .send textarea{
+        font-size: 16px;
+        padding:8px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .list .item .pic{
+        width: 10%;
+        margin-right: 5px;
+    }
+    .thumbnail .pic{
+        width: 180px;
+    }
+    .titleprice h2{
+        font-size:24px;
+    }
+    .titleprice p{
+        font-size: 30px;
+    }
+    .dealprice{
+        border-top: none;
+    }
+    .dealprice .txt p{
+        font-size: 24px;
+        padding-top: 5px;
+    }
+    .dealprice form{
+        align-items: center;
+    }
+    .dealprice input{
+        width: 100%;
+        font-size: 14px;
+        height: 20px;
+    }
+    .remote .txt p, .local .txt p{
+        font-size: 14px;
+    }
+    .send textarea{
+        font-size: 18px;
+        padding:8px;
+    }
+}
+
