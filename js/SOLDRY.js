@@ -124,7 +124,7 @@ $(document).ready(function(){
         $('.landmarkIcon').not(this).css('transform','scale(1)');
         $(this).css({
             transform:'scale(1.1)',
-            transition:'.2s'
+            transition:'.2s'    
         });
         let name= $(this).attr('id');
         $(`.${name}.cardContent`).stop(true).slideToggle(200,'linear');
