@@ -122,10 +122,20 @@ $('.recomand .owl-carousel').owlCarousel({
 $(document).ready(function(){
     $('.landmarkIcon').click(function(){
         $('.landmarkIcon').not(this).css('transform','scale(1)');
+        $('.landmarkIcon').find('.txt p').not(this).css({
+            backgroundColor:'#3335',
+        });
         $(this).css({
             transform:'scale(1.1)',
-            transition:'.2s'    
+            transition:'.2s', 
         });
+        $(this).find('.txt p').css({
+            backgroundColor:'#E07048',
+        });
+
+
+
+
         let name= $(this).attr('id');
         $(`.${name}.cardContent`).stop(true).slideToggle(200,'linear');
     });

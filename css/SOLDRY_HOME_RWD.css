@@ -44,14 +44,9 @@
     background-color: #E07048 ;
 }
 @media screen and (min-width:768px) {
-    .owl-stage-outer{
+    .owl-carousel {
         max-width: 1400px;
-        width: 90%;
-    }
-    .owl-carousel .owl-item img{
-        max-width: 80%;
         margin: auto;
-        /*我不知道為什麼*/
     }
     .ad .item .text{
         width: 30%;

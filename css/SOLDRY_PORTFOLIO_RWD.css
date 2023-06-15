@@ -28,9 +28,9 @@
 .portfolio .backimg_star{
     height: 20vh;
     background: url("../IMG/portfolio_bgcimg_star.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: bottom center;
-    background-attachment: local;
+    background-attachment: fixed;
 }
 [class*=backimg_]{
     display: flex;
